@@ -1,0 +1,111 @@
+<!doctype HTML>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Registration form</title>
+		<style>
+        /* Center the table horizontally */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+			flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+        }
+	</style>
+	</head>
+	<body>
+		<div>
+			<form action="http://practice.mohakashbiggan.com/" method="post">
+				<fieldset>
+					<legend>Registration form</legend>
+					<fieldset>
+						<legend>Personal Information</legend>
+						<table>
+							<tr>
+								<td><label for="f-name">First Name</label></td>
+								<td>:</td>
+								<td><input type="text" id="f-name" name="f-name" placeholder="Your first rname maxmim 15 charecter" size="40" maxlength="15"></td>
+							</tr>
+							<tr>
+								<td><label for="L-name">Last Name</label></td>
+								<td>:</td>
+								<td><input type="L-name" id="L-name" name="L-name" placeholder="Your last rname maxmim 15 charecter" size="40" maxlength="15"></td>
+							</tr>
+							<tr>
+								<td><label for="email">Your Email</label></td>
+								<td>:</td>
+								<td><input type="email" id="email" name="email" placeholder="Your valid email address" size="40"></td>
+							</tr>
+							<tr>
+								<td><label for="sex">Gender</label></td>
+								<td>:</td>
+								<td><input type="radio" id="sex" name="sex">Male
+									<input type="radio" id="sex" name="sex">Female
+								</td>
+							</tr>
+							<tr>	
+								<td><label type="dob">Date of Birth</label>
+								<td>:</td>
+								<td><input type="date" id="dob" name="dob">
+								</td>
+							</tr>
+							<tr>
+								<td><label for="country">Your Country</label></td>
+								<td>:</td>
+								<td><select id="country" name="country">
+										<option value="USA">United States</option>
+										<option value="India">India</option>
+										<option value="Bangladesh">Bangladesh</option>
+										<option value="others">Others</option>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="skill">Select Your Programming Skill</label></td>
+								<td>:</td>
+								<td><input type="checkbox">HTML
+									<input type="checkbox">CSS
+									<input type="checkbox">Java
+									<input type="checkbox">Python
+									<input type="checkbox">PHP
+									<input type="checkbox">C++
+									</td>
+							</tr>
+						</table>
+					</fieldset>
+					<fieldset>
+						<legend>Login Information</legend>
+						<table>
+							<tr>
+								<td><label for="username">Username</label></td>
+								<td>:</td>
+								<td><input type="text" id="username" name="username" placeholder="input a valid username"></td>
+							</tr>
+							<tr>
+								<td><label for="password">Your secret pin</label></td>
+								<td>:</td>
+								<td><input type="password" id="password" name="password" placeholder="input a valid pin"></td>
+							</tr>
+						</table>
+					</fieldset>
+					<fieldset>
+					<legend>Submission</legend>
+					<table>
+						<tr>
+							<td><label for="comment">Your Comment</label></td>
+							<td>:</td>
+							<td><textarea type="comment" id="comment" name="comment" rows="10" cols="20"></textarea></td>
+						</tr>
+						<tr>	
+							<td><input type="reset" value="Reset">
+								<input type="submit" value="Register">
+							</td>
+						</tr>
+					</table>
+					</fieldset>
+				</fieldset>	
+				</form>
+		</div>
+	</body>
+</html>
